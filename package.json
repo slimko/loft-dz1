@@ -1,0 +1,10 @@
+{
+  "name": "Loft-homework",
+  "version": "0.0.1",
+  "dependencies": {
+  },
+  "devDependencies": {
+    "browser-sync": "~2.9.7",
+    "gulp": "~3.9.0"
+  }
+}

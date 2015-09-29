@@ -1,0 +1,207 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 13.09.2015, 23:28:42
+    Author     : mrakoff
+*/
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+  min-width:768px;
+  color:#58697a;
+}
+@font-face {
+    font-family: 'fira_sanslight';
+    src: url('../fonts/firasans-light.eot');
+    src: url('../fonts/firasans-light.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/firasans-light.woff') format('woff'),
+         url('../fonts/firasans-light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'fira_sansbook';
+    src: url('../fonts/firasans-book.eot');
+    src: url('../fonts/firasans-book.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/firasans-book.woff') format('woff'),
+         url('../fonts/firasans-book.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+body {
+  margin-bottom: 80px;
+  background-image: url(../img/comppattern2.png); /* Путь к фоновому изображению */
+  font-family: 'fira_sansbook';
+  color:#58697a;
+}
+h2 {
+    font-size: 26px;
+    font-family: 'fira_sansbook';
+    margin: 0 5px 5px 5px;
+    font-weight: normal;
+    color:#3ba8c0;
+}
+footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: #eff3f7;
+    margin-top: 2em;
+    height:80px;
+}
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+p{
+	padding:1em 1em 1em 2em;
+	margin:0;
+}
+.block{
+    background-color: #eff3f7;
+    border-radius: 5px;
+    margin-bottom: 1em;
+    padding:1em;
+}
+.text-small{
+	font-family: 'fira_sanslight';
+	font-size:16px;
+}
+.img-block{
+    padding-left:3em;
+    padding-top:1em;
+    display: block;
+    float:right;
+}
+.pure-menu{
+    background-color: #eff3f7;
+    border-radius: 5px;
+    font-family: 'fira_sansbook';
+    font-size: 20px;
+	min-width:200px;
+}
+a.socialbut-vk {
+	background: url(../img/vk.png);
+    width:47px;
+	height:47px;
+    display: inline-block;
+    margin-left: 10px;
+    float:right;
+}
+a.socialbut-vk:hover {
+	background:url(../img/vk.png) -47px;
+}
+a.socialbut-facebook {
+	background: url(../img/facebook.png);
+    width:47px;
+	height:47px;
+    display: inline-block;
+    margin-left: 10px;
+    float:right;
+}
+a.socialbut-facebook:hover {
+	background:url(../img/facebook.png) -47px;
+}
+a.socialbut-twitter {
+	background: url(../img/twitter.png);
+    width:47px;
+	height:47px;
+    display: inline-block;
+    margin-left: 10px;
+    float:right;
+}
+a.socialbut-twitter:hover {
+	background:url(../img/twitter.png) -47px;
+}
+a.socialbut-git {
+	background: url(../img/github.png);
+    width:47px;
+	height:47px;
+    display: inline-block;
+    margin-left: 10px;
+    float:right;
+}
+a.socialbut-git:hover {
+	background:url(../img/github.png) -47px;
+}
+hr{
+	padding:0px;
+	margin:0px;
+	color: #3ba8c0;
+	background-color: #3ba8c0;
+	border: none;
+	height: 1px;
+}
+.pure-menu-link{
+    padding:1em;
+	white-space: pre-wrap;
+}
+.top-menu{
+    padding-top: 36px;
+    padding-bottom: 36px;
+    background-color: #eff3f7;
+    margin-bottom: 2em;
+}
+.footer-menu{
+    padding-top: 8px;
+}
+.row-bordered-bottom{
+    position:relative;
+}
+.row-bordered-bottom:before{
+    content:'';
+    display:block;
+    width:90%;
+    position:absolute;
+    bottom:0;
+    left:50%;
+    margin-left:-40%;
+    height:3px;
+    background:-webkit-radial-gradient(center, ellipse, rgba(28,102,122,1) 0, rgba(28,102,122,0) 75%);
+    background:radial-gradient(ellipse at center, rgba(28,102,122,1) 0, rgba(28,102,122,0) 75%)
+}
+.row-bordered-top{position:relative;}
+.row-bordered-top:before{
+    content:'';
+    display:block;
+    width:90%;
+    position:absolute;
+    top:0;
+    left:50%;
+    margin-left:-40%;
+    height:3px;
+    background:-webkit-radial-gradient(center, ellipse, rgba(28,102,122,1) 0, rgba(28,102,122,0) 75%);
+    background:radial-gradient(ellipse at center, rgba(28,102,122,1) 0, rgba(28,102,122,0) 75%)
+    
+}
+.row-bordered-menu{position:relative;}
+.row-bordered-menu:before{
+    content:'';
+    display:block;
+    width:40%;
+    position:absolute;
+    top:0;
+    left:0;
+    margin-left:-1em;
+    height:2px;
+    background:-webkit-radial-gradient(center, ellipse, rgba(28,102,122,1) 0, rgba(28,102,122,0) 100%);
+    background:radial-gradient(ellipse at center, rgba(28,102,122,1) 0, rgba(28,102,122,0) 100%)
+    
+}

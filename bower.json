@@ -1,0 +1,23 @@
+{
+  "name": "Loft-homework",
+  "version": "0.0.0",
+  "authors": [
+    "Ivan Markov <slimko2008@yandex.ru>"
+  ],
+  "description": "1 homework",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "1.8",
+    "normalize-css": "normalize.css#~3.0.3"
+  }
+}
