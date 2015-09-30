@@ -1,20 +1,101 @@
-/*
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
-*/
-/* 
-    Created on : 13.09.2015, 23:28:42
-    Author     : mrakoff
-*/
-/* Sticky footer styles
--------------------------------------------------- */
 html {
-  position: relative;
-  min-height: 100%;
-  min-width:768px;
-  color:#58697a;
+    height: 100%;
+    /*position: relative;
+    min-width:768px;
+    color:#58697a;*/
 }
+body {
+    height: 100%;
+    font:normal 1em 'fira_sanslight';
+    background: url(../img/comppattern2.png); /* Путь к фоновому изображению */
+    color:#58697a;
+    /*margin-bottom: 80px;*/
+}
+/* класс обертки с футером внизу*/
+.wrapper{
+    position:relative;
+    min-height:100%;
+    min-width: 970px;
+    height: auto !important;
+    owerflow:hidden;
+}
+.wraper:after{
+    content: "";
+    height: 80px;
+    display: block;
+    border: 10px solid red;
+}
+/* END - класс обертки с футером внизу*/
+
+/*футер*/
+.page-footer{
+    height: 80px; /**/
+    min-width: 970px;
+    margin-top:-80px;
+    color: #4a545d;
+    font-family: 'fira_sanslight';
+    background: #eff3f7;
+}
+.page-footer .container {
+    padding-top:23px;
+    position: relative;
+}
+.page-footer .copyright{
+    margin: 0 180px;
+    padding-top:7px;
+    text-align: center;
+    font-size: 13px;
+}
+/*Логин*/
+.page-footer .lock{
+    position: absolute;
+    top:26px;
+    left:20px;
+}
+.lock .lock-inner{
+    display: block;
+    height:40px;
+    font-family: 'fira_sansbook';
+    font-size:16px;
+    line-height: 2.2;
+    color:#4a545d;
+    text-decoration: none;
+    background: url(../img/lock-close.png) no-repeat;
+}
+.lock .lock-inner{
+    text-decoration: none;
+    background: url(../img/lock-open.png) no-repeat;
+}
+/*End - Логин*/
+/*End - футер*/
+
+/* общие классы*/
+.container{
+    width:960px;
+    margin: 0 auto;
+}
+.text-center{
+    text-align:center;
+}
+.pull-left{
+    float: left !important;
+}
+.pull-right{
+    float: right !important;
+}
+/*clearfix*/
+.container:before,.clearfix:before,
+.container:after,.clearfix:after{
+    content: " ";
+    display: table;
+}
+.container:after, .clearfix:after{
+    clear:both;
+}
+/*END - clearfix*/
+
+/* END общие классы*/
+
 @font-face {
     font-family: 'fira_sanslight';
     src: url('../fonts/firasans-light.eot');
@@ -24,6 +105,8 @@ html {
     font-weight: normal;
     font-style: normal;
 }
+
+
 @font-face {
     font-family: 'fira_sansbook';
     src: url('../fonts/firasans-book.eot');
@@ -33,12 +116,7 @@ html {
     font-weight: normal;
     font-style: normal;
 }
-body {
-  margin-bottom: 80px;
-  background-image: url(../img/comppattern2.png); /* Путь к фоновому изображению */
-  font-family: 'fira_sansbook';
-  color:#58697a;
-}
+/*
 h2 {
     font-size: 26px;
     font-family: 'fira_sansbook';
@@ -46,14 +124,7 @@ h2 {
     font-weight: normal;
     color:#3ba8c0;
 }
-footer{
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    background-color: #eff3f7;
-    margin-top: 2em;
-    height:80px;
-}
+
 .container {
   padding-right: 15px;
   padding-left: 15px;
@@ -205,3 +276,4 @@ hr{
     background:radial-gradient(ellipse at center, rgba(28,102,122,1) 0, rgba(28,102,122,0) 100%)
     
 }
+*/
