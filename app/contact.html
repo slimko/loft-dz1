@@ -60,9 +60,9 @@
                     <address class="contacts">
                     <span class="contacts-header">Контакты</span>
                         <ul class="contacts-list">
-                            <li class="contacts-item mail"><a href="/" class="contacts-link">slimko2008@ya.ru</a></li>
-                            <li class="contacts-item tel"><a href="/" class="contacts-link">+79805418337</a></li>
-                            <li class="contacts-item skype"><a href="/" class="contacts-link">markoff13</a></li>
+                            <li class="contacts-item mail"><a href="mailto:slimko2008@yandex.ru" class="contacts-link">slimko2008@ya.ru</a></li>
+                            <li class="contacts-item tel"><a href="callto:+79805418337" class="contacts-link">+79805418337</a></li>
+                            <li class="contacts-item skype"><a href="skype:markoff13" class="contacts-link">markoff13</a></li>
                         </ul>
                     </address>
                 </aside>   
@@ -72,8 +72,37 @@
                <div class="variable-content">
                     <section class="contactbox">
                         <h2 class="contact-page-header">У вас есть интересный проект? Напишите мне</h2>
-                        <div class="aboutbox-body clearfix">                  
-                        </div> 
+                        <!--<div class="aboutbox-body clearfix">-->
+                            <form action="action.php" method="POST" class="contact-form">
+                                <div class="wrap-input">
+                                    <label for="name" class="name">Имя</label>
+                                    <input type="text" name="name" id="name" placeholder="Как к Вам обращаться" autofocus>
+                                </div>
+                                <div class="wrap-input">
+                                    <label for="email" class="email">Email</label>
+                                    <input type="email" name="email" id="email" placeholder="Куда мне писать">
+                                </div>   
+                                <div class="wrap-textarea"> 
+                                    <label for="" class="message">Сообщение</label>
+                                    <textarea rows="10" name="" id="" placeholder="Кратко в чем суть"></textarea>
+                                </div>
+                                <div class="contact-text">Введите код, указанный на картинке</div>   
+                                <div class="wrap-content">    
+                                    <div class="wrap-input">
+                                        <div class="captcha-number"><img src="img/captcha.jpg"></div> 
+                                    </div>  
+                                    <div class="wrap-input">
+                                        <input type="text" name="cod"  placeholder="Введите код" class="pole">
+                                    </div>
+                                </div>          
+                                <div class="wrap-form">     
+                                    <div class="wrap-controls">
+                                        <input type="submit" value="Отправить">
+                                        <input type="reset" value="Очистить" class="right">
+                                    </div> 
+                                </div>
+                            </form>
+                        <!--</div> -->
                     </section>                                   
                 </div>
             </div>    
