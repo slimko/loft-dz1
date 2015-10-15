@@ -105,17 +105,63 @@
                               <div class="work-site">www.site.ru</div>   
                               <div class="work-descriprion">Информация о проекте Информация о проекте Информация о проекте Информация о проекте</div> 
                             </div> 
-                            <div class="work-item-add">
-                                <div class="work-img-add">
-                                    <a href="" class="add-link">Добавить проект</a>
+                            <a href="#" id="popup-open" class="add-link">
+                                <div class="work-item-add">
+                                    <div class="work-img-add">
+                                        Добавить проект
+                                    </div> 
                                 </div> 
-                            </div> 
+                            </a>
                         </div> 
                     </div>                                
                 </div>
             </div>    
         </div>
     </div>
+    <div id="add-project-popup">
+        <div class="box-wrap popup-addworks">
+            <div class="box-header">
+                <button type="button" class="b-close"></button>
+                Добавление проекта
+            </div>
+            <div class="box-content">
+                <form action="#" method="POST">
+                    <div class="wrap-input">
+                        <label for="name" class="name">Название проекта</label>
+                        <input type="text" name="name" id="name" placeholder="Введите название" autofocus>
+                    </div> 
+                    <div class="wrap-input">
+                        <label for="name" class="name">Картинка проекта</label>
+                        <input type="file" name="name" id="name" placeholder="Добавте ссылку">
+                    </div>
+                    <div class="wrap-input">
+                        <label for="name" class="name">URL проекта</label>
+                        <input type="text" name="name" id="name" placeholder="Загрузите изображение">
+                    </div>                
+                    <!-- <div class="mask-wrapper">
+                    <div class="mask">
+                    <input type="image" class="send-file">
+                    <input class="fileInputText" type="text" disabled>
+                        
+                       <button>Обзор</button>
+
+                    </div>
+                        <input id="my_file" class="custom-file-input" type="file" name="my_file">
+                   
+                    </div>  -->                     
+                    <div class="wrap-textarea"> 
+                        <label for="" class="message">Описание</label>
+                        <textarea rows="4" name="" id="" placeholder="Пара слов о вашем проекте"></textarea>
+                    </div>
+
+
+                    <div class="wrap-input center">
+                        <input type="submit" value="Добавить">
+                    </div>                
+               </form>
+            </div>
+        </div>
+    </div>  
     <footer class="page-footer">
         <div class="container">
             <div class="lock">
@@ -125,7 +171,9 @@
         </div>
     </footer>           
         <script type="text/javascript" src="bower/jquery/dist/jquery.js"></script>
+         <script type="text/javascript" src="bower/bPopup/jquery.bpopup.js"></script>
         <script type="text/javascript" src="js/main.js"></script>
+        <script type="text/javascript" src="js/myModule.js"></script>
     </body>
 </html>
  

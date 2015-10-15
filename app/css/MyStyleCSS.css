@@ -484,6 +484,7 @@ body {
 }
 .work-item-add{
     width: 176px;
+        height: 130px;
     margin-left: 23px;
     margin-bottom: 30px;
     display: inline-block;
@@ -528,6 +529,7 @@ body {
 }
 .work-item{
     width: 180px;
+
     margin-left: 23px;
     margin-bottom: 30px;
     display: inline-block;
@@ -593,12 +595,7 @@ color: #fff;
 /*END-страница мои работы*/
 
 /*страница контакты*/
-.left{
-    float: left;
-}
-.right{
-    float: right;
-}
+
 .contact-form{
     width: 404px;
     margin: 0 auto;
@@ -633,8 +630,7 @@ color: #fff;
     background: #fff;
     text-align: center;
 }   
-.wrap-input input,.wrap-textarea textarea
-{
+/*
     min-width: 100%;
     max-width: 100%;
     box-sizing: border-box;
@@ -645,7 +641,8 @@ color: #fff;
     border: 1px solid #48cbe8;
     border-radius: 3px;
     color: #48cbe8;
-}
+}*/
+
 /*END - страница контакты*/
 
 /*Логин*/
@@ -663,14 +660,16 @@ color: #fff;
     overflow: hidden;
     border-radius: 4px;
 }
-.login-content{
-
-}
 /**/
 .login-content{
-    width: 587px;
-    height:487px;
+    width: 591px;
+    margin: auto;
     border-radius: 4px;
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
 }
 .login-form{
     width: 426px;
@@ -700,6 +699,54 @@ color: #fff;
 
 
 
+
+
+.contact-form textarea::-webkit-input-placeholder, .contact-form input::-webkit-input-placeholder {color:#48cbe8;}
+.contact-form textarea::-moz-placeholder, .contact-form input::-moz-placeholder          {color:#48cbe8;}/* Firefox 19+ */
+.contact-form textarea:-moz-placeholder, .contact-form input:-moz-placeholder           {color:#48cbe8;}/* Firefox 18- */
+.contact-form textarea:-ms-input-placeholder, .contact-form input:-ms-input-placeholder      {color:#48cbe8;}
+
+/*общие классы*/
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
+.center{
+    text-align: center;
+}
+.box-wrap{
+    background: #eff3f7;
+    border-radius: 4px;
+}
+.box-header{
+    background: #48cbe8;
+    border-bottom: 10px solid #67dffa;
+    border-radius: 4px 4px 0 0;
+    color: #fff;
+    font-size: 20px;
+    padding: 10px;
+    margin-bottom:7px;
+}
+.box-content{
+    padding-left: 15px;
+    padding-right: 15px;
+}
+/*оформление инпутов и кнопок */
+input,textarea {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    padding: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #48cbe8;
+    border-radius: 3px;
+    color: #48cbe8;
+}
+
 label{
     color: #9ca1ae;
     font-size: 19px;
@@ -708,7 +755,8 @@ input[name="cod"] {
     margin-top:12px;
 }
 input[type="submit"] {
-    padding: 8px 21px 4px;
+    width: auto;
+    padding: 5px 15px 3px;
     background-color: #48cbe8;
     border-radius: 5px;
     color: #fff;
@@ -718,7 +766,11 @@ input[type="submit"] {
     border: none;
     box-shadow: 0px 3px 0 0 #3ba8c0;
 }
+input[type="submit"]:hover,input[type="submit"]:focus{
+    background-color: #76dcf3;
+}
 input[type="reset"]{
+    width: auto;
     padding: 8px 21px 4px;
     border-radius: 5px;
     color: white;
@@ -732,11 +784,57 @@ input[type="reset"]{
 input[type="reset"]:hover,input[type="reset"]:focus{
     background-color: #aec4da;
 }
-input[type="submit"]:hover,input[type="submit"]:focus{
-    background-color: #76dcf3;
+/*input file*/
+.mask-wrapper {
+   height: 37px;
 }
+.mask-wrapper .send-file {
+    position: absolute;
+   padding: 3px 20px;
+   color: #fff;
+   background-color: #000;
+   outline: none;
+    z-index: 1;
+    width: 50px;
+}
+.mask-wrapper .fileInputText {
+   position: relative;
+   outline: none;
+   width: 100%;
+   background: #fff;
+}
+.custom-file-input {
+   width:100%;
+   border: 1px solid red;
+   opacity: 0;
+   filter: alpha(opacity=0);
+   position: relative;
+   top: -47px;
+   z-index: 99999;
+   cursor: pointer;
+}
+/*конец - input file*/
+/*конец - оформление инпутов и кнопок*/
+/*конец - общие классы*/
 
-.contact-form textarea::-webkit-input-placeholder, .contact-form input::-webkit-input-placeholder {color:#48cbe8;}
-.contact-form textarea::-moz-placeholder, .contact-form input::-moz-placeholder          {color:#48cbe8;}/* Firefox 19+ */
-.contact-form textarea:-moz-placeholder, .contact-form input:-moz-placeholder           {color:#48cbe8;}/* Firefox 18- */
-.contact-form textarea:-ms-input-placeholder, .contact-form input:-ms-input-placeholder      {color:#48cbe8;}
+/*popup*/
+.popup-addworks {
+    width:300px;
+    display: block;
+}
+#add-project-popup{
+    display: none;
+}
+.b-close{
+height: 25px;
+width: 25px;
+position: absolute;
+right: 15px;
+background: url('../img/close.png');
+border: 0;
+}
+/*
+#popup-addworks{
+    display: none;
+}*/
+/*popup*/

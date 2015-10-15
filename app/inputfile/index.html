@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Пример</title>
+
+	<style type="text/css">
+		.item {
+			width: 183px;
+			position: relative;
+		}
+
+		.img {
+			width: 100%;
+			height: 129px;
+			border-radius: 4px;
+			margin-bottom: 3px;
+		}
+
+		.hover {
+			position: absolute;
+			width: 100%;
+			top: 55px;
+			text-align: center;
+			transform: scale(0);
+			-webkit-transform: scale(0);
+			transition: all 0.5s ease-in-out;
+			-webkit-transition: all 0.5s ease-in-out;
+		}
+
+		.link {
+			font-size: 12px;
+			border: solid 3px #eff3f7;
+			color: #eff3f7;
+			text-decoration: none;
+			border-radius: 5px;
+			padding: 0 4px;
+		}
+
+		.item:hover .hover {	
+			transform: scale(1);
+			-webkit-transform: scale(1);
+		}
+
+		.item:hover .img {
+		  background-color: rgb( 1, 108, 164);
+		}
+
+		.item:hover .img img {
+			opacity: .20;
+		}
+
+
+	.fileupload-lable {
+		  display: block;
+		  width: 52px;
+		  height: 45px;
+		  position: absolute;
+		  right: 0;
+		  background: url(2.png) 10px 7px no-repeat;
+		  background-color: #48cbe8;
+		  border-radius: 0 4px 4px 0;
+	}
+
+	.fileupload {
+		  border: 0;
+		  clip: rect(0 0 0 0);
+		  height: 1px;
+		  margin: -1px;
+		  overflow: hidden;
+		  padding: 0;
+		  position: absolute;
+		  width: 1px;
+		}
+
+		.input {
+		  display: block;
+		  height: 41px;
+		  color: #48cbe8;
+		  background-color: #fff;
+		  border: 1px solid rgb(72, 203, 232);
+		  border-radius: 4px;
+		  outline: none;
+		}
+		.form {
+			width: 220px;
+			position: relative;
+		}
+
+
+
+	</style>
+
+
+</head>
+<body>
+
+<div class="item">
+	<div class="img">
+		<img src="1.jpg">
+		<div class="hover">
+			<a class="link" href="#">Подробнее</a>
+		</div>
+	</div>
+	<a href="#"> Ссылка на проект</a>
+</div>
+
+
+<div class="form">
+	<form>
+	<label class="fileupload-lable">
+	    <input id="fileupload" class="fileupload" type="file" name="files[]">
+	    <input id="fileurl" type="hidden" name="fileurl">
+  </label>
+  <input id="filename" type="text" class="input" name="filename" placeholder="Загрузите изображение" disabled="">
+</form>
+</div>
+
+
+</body>
+</html>
