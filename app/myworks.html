@@ -14,6 +14,7 @@
         <link rel="icon" type="image/x-icon" href="/favicon.ico">
         <!-- bower CSS-->
         <link rel="stylesheet" href="/bower/normalize-css/normalize.css">
+        <link rel="stylesheet" href="/bower/qtip2/jquery.qtip.css">
         <!-- CSS-->
         <link rel="stylesheet" href="css/MyStyleCSS.css">
         <!-- font
@@ -125,18 +126,18 @@
                 Добавление проекта
             </div>
             <div class="box-content">
-                <form action="#" method="POST">
+                <form id="add-new-project" method="POST">
                     <div class="wrap-input">
                         <label for="name" class="name">Название проекта</label>
                         <input type="text" name="name" id="name" placeholder="Введите название" autofocus>
                     </div> 
                     <div class="wrap-input">
-                        <label for="name" class="name">Картинка проекта</label>
-                        <input type="file" name="name" id="name" placeholder="Добавте ссылку">
+                        <label for="picture" class="name">Картинка проекта</label>
+                        <input type="file" name="picture" id="picture" placeholder="Добавте ссылку">
                     </div>
                     <div class="wrap-input">
-                        <label for="name" class="name">URL проекта</label>
-                        <input type="text" name="name" id="name" placeholder="Загрузите изображение">
+                        <label for="url" class="name">URL проекта</label>
+                        <input type="text" name="url" id="url" placeholder="Загрузите изображение">
                     </div>                
                     <!-- <div class="mask-wrapper">
                     <div class="mask">
@@ -150,8 +151,8 @@
                    
                     </div>  -->                     
                     <div class="wrap-textarea"> 
-                        <label for="" class="message">Описание</label>
-                        <textarea rows="4" name="" id="" placeholder="Пара слов о вашем проекте"></textarea>
+                        <label for="text" class="message">Описание</label>
+                        <textarea name="text" rows="4" name="" id="" placeholder="Пара слов о вашем проекте"></textarea>
                     </div>
 
 
@@ -172,6 +173,7 @@
     </footer>           
         <script type="text/javascript" src="bower/jquery/dist/jquery.js"></script>
          <script type="text/javascript" src="bower/bPopup/jquery.bpopup.js"></script>
+         <script type="text/javascript" src="bower/qtip2/jquery.qtip.js"></script>
         <script type="text/javascript" src="js/main.js"></script>
         <script type="text/javascript" src="js/myModule.js"></script>
     </body>

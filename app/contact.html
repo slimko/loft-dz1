@@ -14,6 +14,7 @@
         <link rel="icon" type="image/x-icon" href="/favicon.ico">
         <!-- bower CSS-->
         <link rel="stylesheet" href="/bower/normalize-css/normalize.css">
+        <link rel="stylesheet" href="/bower/qtip2/jquery.qtip.css">
         <!-- CSS-->
         <link rel="stylesheet" href="css/MyStyleCSS.css">
         <!-- font
@@ -73,18 +74,18 @@
                     <section class="contactbox">
                         <h2 class="contact-page-header">У вас есть интересный проект? Напишите мне</h2>
                         <!--<div class="aboutbox-body clearfix">-->
-                            <form action="action.php" method="POST" class="contact-form">
+                            <form id="contact-me" action="action.php" method="POST" class="contact-form">
                                 <div class="wrap-input">
                                     <label for="name" class="name">Имя</label>
-                                    <input type="text" name="name" id="name" placeholder="Как к Вам обращаться" autofocus>
+                                    <input type="text" name="name" placeholder="Как к Вам обращаться" class="input" qtip-content="Вы не ввели имя" autofocus>
                                 </div>
                                 <div class="wrap-input">
                                     <label for="email" class="email">Email</label>
-                                    <input type="email" name="email" id="email" placeholder="Куда мне писать">
+                                    <input type="email" name="email" placeholder="Куда мне писать" class="input" qtip-content="Вы не ввели email" qtip-position="right">
                                 </div>   
                                 <div class="wrap-textarea"> 
-                                    <label for="" class="message">Сообщение</label>
-                                    <textarea rows="10" name="" id="" placeholder="Кратко в чем суть"></textarea>
+                                    <label for="message" class="message">Сообщение</label>
+                                    <textarea rows="10" name="message" placeholder="Кратко в чем суть" class="textarea" qtip-content="Введите свой вопрос"></textarea>
                                 </div>
                                 <div class="contact-text">Введите код, указанный на картинке</div>   
                                 <div class="wrap-content">    
@@ -92,7 +93,7 @@
                                         <div class="captcha-number"><img src="img/captcha.jpg"></div> 
                                     </div>  
                                     <div class="wrap-input">
-                                        <input type="text" name="cod"  placeholder="Введите код" class="pole">
+                                        <input type="text" name="cod"  placeholder="Введите код" class="pole input" qtip-position="right" qtip-content="Вы не ввели код">
                                     </div>
                                 </div>          
                                 <div class="wrap-form">     
@@ -118,6 +119,9 @@
     </footer>           
         <script type="text/javascript" src="bower/jquery/dist/jquery.js"></script>
         <script type="text/javascript" src="js/main.js"></script>
+        <script type="text/javascript" src="bower/qtip2/jquery.qtip.js"></script>
+        <script type="text/javascript" src="js/validator.js"></script>
+        <script type="text/javascript" src="js/contact_me.js"></script>
     </body>
 </html>
  

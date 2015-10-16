@@ -499,6 +499,7 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     display: block;
+    height: 130px;
 }
 .work-img-add .add-link{
     padding:85px 0 16px 0;
@@ -837,4 +838,10 @@ border: 0;
 #popup-addworks{
     display: none;
 }*/
-/*popup*/
+/* конец popup*/
+
+/*валидация*/
+.hasError{
+    border:2px solid red;
+}
+/*конец валидация*/

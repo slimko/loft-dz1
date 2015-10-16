@@ -1,0 +1,102 @@
+ <!doctype html>
+<html lang="ru-RU">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style type="text/css">
+			.relative{
+				background: green;
+			border: 10px solid red;
+			position:relative;
+			width: 200px;
+			height:300px;
+			color: #fff;
+			text-align: center;
+			/*z-index: 9999;*/
+			/*float: right; не действует для fixed*/
+			}
+					.relative2{
+				background: #f1f1f1;
+			border: 10px solid red;
+			position:relative;
+			color: #fff;
+			text-align: center;
+			/*z-index: 9999;*/
+			/*float: right; не действует для fixed*/
+			}
+			.fixed{
+			background: green;
+			border: 10px solid red;
+			position:fixed;
+			width: 200px;
+			height:300px;
+			top:100px;
+			color: #fff;
+			text-align: center;
+			/*z-index: 9999;*/
+			/*float: right; не действует для fixed*/
+			}
+						.absolute{
+			background: yellow;
+			border: 10px solid red;
+			position:absolute;
+			width: 200px;
+			height:300px;
+			top:100px;
+			right:100px;
+			left:10px;
+			color: #fff;
+			text-align: center;
+			/*z-index: 1;*/
+			}
+        </style>
+    </head>
+    <body>
+    <!--<div class="fixed">Блок fixed</div>
+    <div class="absolute">Блок absolute</div>-->
+    <div class="relative2">Блок relative<div class="relative">Блок relative</div>
+    	
+ <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ut varius arcu. Phasellus commodo leo bibendum libero feugiat, sed condimentum justo porttitor. Maecenas finibus in quam sed accumsan. Nunc viverra, justo maximus pellentesque tincidunt, eros erat pretium magna, in aliquam lorem felis a nibh. In placerat elit dolor, a laoreet enim mattis et. Quisque tempor purus eu dignissim maximus. Nullam laoreet sapien risus, eget dapibus eros porttitor a. Mauris iaculis metus nulla, et imperdiet ipsum sollicitudin sit amet. Nam et vehicula dui. Sed ornare scelerisque ligula. Ut sed mattis diam.</p>
+
+<p>sSuspendisse ornare elementum purus, placerat ornare ligula viverra in. Fusce a egestas eros. Vivamus vel metus vehicula, eleifend arcu vel, ultricies mauris. Quisque ac elit ligula. Nulla facilisi. Curabitur cursus tempor orci, et feugiat ipsum placerat ut. Sed ultrices venenatis luctus. Sed cursus ligula eget risus pulvinar, non facilisis libero aliquet. Donec cursus, enim non convallis tincidunt, nisi felis varius eros, quis ultrices magna enim sed velit. Aenean aliquam purus quis lorem lacinia fringilla. Nunc accumsan urna ut risus aliquam blandit non eleifend eros. Donec cursus sodales viverra. In ut risus ultrices, dictum sapien eu, hendrerit ipsum. Praesent placerat tellus mattis turpis scelerisque suscipit vitae a magna.</p>
+
+<p>Pellentesque maximus luctus congue. Aenean imperdiet volutpat venenatis. Pellentesque vulputate faucibus pulvinar. Aliquam in mauris suscipit odio faucibus volutpat. Proin mi sapien, cursus sollicitudin lacinia non, rutrum at nisl. Aenean et augue augue. In diam tortor, tristique sit amet laoreet sit amet, semper nec sapien. Morbi nec lacus rutrum, hendrerit tortor non, maximus libero. Maecenas placerat orci sit amet metus condimentum scelerisque. Duis non libero felis. Vestibulum auctor nec libero non congue. Nunc sed nunc nibh. Pellentesque id maximus sapien. In hac habitasse platea dictumst. Praesent congue, lectus vel hendrerit vulputate, est augue molestie neque, nec aliquet tellus urna nec odio. Phasellus consectetur, quam quis dignissim finibus, enim eros finibus lacus, sit amet tempor neque magna congue velit.</p>
+
+<p>Pellentesque tortor purus, vestibulum nec neque ut, tincidunt vehicula odio. Nunc nisl tellus, mattis id blandit eu, tincidunt pulvinar ex. Nunc id nunc vitae tortor euismod egestas. Vivamus efficitur iaculis consectetur. Ut a felis mi. Curabitur placerat ornare placerat. Suspendisse urna nulla, feugiat id fringilla in, finibus mattis eros. Vivamus leo ligula, ultrices vel enim ut, dignissim tempor ex. Donec ut nulla id tellus elementum ornare. Duis vel auctor mi, nec suscipit diam. Nullam eu sollicitudin leo, eu tincidunt urna. Duis vitae pharetra est, posuere tincidunt nulla. Phasellus in urna quam.</p>
+
+<p>Aliquam sodales lacus et erat dignissim, non lacinia turpis iaculis. Donec gravida eu elit quis tempus. Praesent tempus leo non eleifend varius. Cras venenatis tellus nec sapien consectetur rutrum. Quisque volutpat lectus at fermentum venenatis. Morbi quis erat laoreet, placerat erat non, porttitor arcu. Etiam quis ante non neque porta bibendum. Sed non augue justo. Fusce volutpat dignissim urna, vel dictum dolor. Sed feugiat scelerisque vestibulum. Integer rutrum tempus sapien, id consectetur ex dapibus sit amet. Nullam lacus risus, mollis non ligula sed, viverra dignissim lacus. Phasellus convallis lobortis metus, vitae bibendum sem ultricies venenatis.</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ut varius arcu. Phasellus commodo leo bibendum libero feugiat, sed condimentum justo porttitor. Maecenas finibus in quam sed accumsan. Nunc viverra, justo maximus pellentesque tincidunt, eros erat pretium magna, in aliquam lorem felis a nibh. In placerat elit dolor, a laoreet enim mattis et. Quisque tempor purus eu dignissim maximus. Nullam laoreet sapien risus, eget dapibus eros porttitor a. Mauris iaculis metus nulla, et imperdiet ipsum sollicitudin sit amet. Nam et vehicula dui. Sed ornare scelerisque ligula. Ut sed mattis diam.</p>
+
+<p>sSuspendisse ornare elementum purus, placerat ornare ligula viverra in. Fusce a egestas eros. Vivamus vel metus vehicula, eleifend arcu vel, ultricies mauris. Quisque ac elit ligula. Nulla facilisi. Curabitur cursus tempor orci, et feugiat ipsum placerat ut. Sed ultrices venenatis luctus. Sed cursus ligula eget risus pulvinar, non facilisis libero aliquet. Donec cursus, enim non convallis tincidunt, nisi felis varius eros, quis ultrices magna enim sed velit. Aenean aliquam purus quis lorem lacinia fringilla. Nunc accumsan urna ut risus aliquam blandit non eleifend eros. Donec cursus sodales viverra. In ut risus ultrices, dictum sapien eu, hendrerit ipsum. Praesent placerat tellus mattis turpis scelerisque suscipit vitae a magna.</p>
+
+<p>Pellentesque maximus luctus congue. Aenean imperdiet volutpat venenatis. Pellentesque vulputate faucibus pulvinar. Aliquam in mauris suscipit odio faucibus volutpat. Proin mi sapien, cursus sollicitudin lacinia non, rutrum at nisl. Aenean et augue augue. In diam tortor, tristique sit amet laoreet sit amet, semper nec sapien. Morbi nec lacus rutrum, hendrerit tortor non, maximus libero. Maecenas placerat orci sit amet metus condimentum scelerisque. Duis non libero felis. Vestibulum auctor nec libero non congue. Nunc sed nunc nibh. Pellentesque id maximus sapien. In hac habitasse platea dictumst. Praesent congue, lectus vel hendrerit vulputate, est augue molestie neque, nec aliquet tellus urna nec odio. Phasellus consectetur, quam quis dignissim finibus, enim eros finibus lacus, sit amet tempor neque magna congue velit.</p>
+
+<p>Pellentesque tortor purus, vestibulum nec neque ut, tincidunt vehicula odio. Nunc nisl tellus, mattis id blandit eu, tincidunt pulvinar ex. Nunc id nunc vitae tortor euismod egestas. Vivamus efficitur iaculis consectetur. Ut a felis mi. Curabitur placerat ornare placerat. Suspendisse urna nulla, feugiat id fringilla in, finibus mattis eros. Vivamus leo ligula, ultrices vel enim ut, dignissim tempor ex. Donec ut nulla id tellus elementum ornare. Duis vel auctor mi, nec suscipit diam. Nullam eu sollicitudin leo, eu tincidunt urna. Duis vitae pharetra est, posuere tincidunt nulla. Phasellus in urna quam.</p>
+
+<p>Aliquam sodales lacus et erat dignissim, non lacinia turpis iaculis. Donec gravida eu elit quis tempus. Praesent tempus leo non eleifend varius. Cras venenatis tellus nec sapien consectetur rutrum. Quisque volutpat lectus at fermentum venenatis. Morbi quis erat laoreet, placerat erat non, porttitor arcu. Etiam quis ante non neque porta bibendum. Sed non augue justo. Fusce volutpat dignissim urna, vel dictum dolor. Sed feugiat scelerisque vestibulum. Integer rutrum tempus sapien, id consectetur ex dapibus sit amet. Nullam lacus risus, mollis non ligula sed, viverra dignissim lacus. Phasellus convallis lobortis metus, vitae bibendum sem ultricies venenatis.</p>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ut varius arcu. Phasellus commodo leo bibendum libero feugiat, sed condimentum justo porttitor. Maecenas finibus in quam sed accumsan. Nunc viverra, justo maximus pellentesque tincidunt, eros erat pretium magna, in aliquam lorem felis a nibh. In placerat elit dolor, a laoreet enim mattis et. Quisque tempor purus eu dignissim maximus. Nullam laoreet sapien risus, eget dapibus eros porttitor a. Mauris iaculis metus nulla, et imperdiet ipsum sollicitudin sit amet. Nam et vehicula dui. Sed ornare scelerisque ligula. Ut sed mattis diam.</p>
+
+<p>sSuspendisse ornare elementum purus, placerat ornare ligula viverra in. Fusce a egestas eros. Vivamus vel metus vehicula, eleifend arcu vel, ultricies mauris. Quisque ac elit ligula. Nulla facilisi. Curabitur cursus tempor orci, et feugiat ipsum placerat ut. Sed ultrices venenatis luctus. Sed cursus ligula eget risus pulvinar, non facilisis libero aliquet. Donec cursus, enim non convallis tincidunt, nisi felis varius eros, quis ultrices magna enim sed velit. Aenean aliquam purus quis lorem lacinia fringilla. Nunc accumsan urna ut risus aliquam blandit non eleifend eros. Donec cursus sodales viverra. In ut risus ultrices, dictum sapien eu, hendrerit ipsum. Praesent placerat tellus mattis turpis scelerisque suscipit vitae a magna.</p>
+
+<p>Pellentesque maximus luctus congue. Aenean imperdiet volutpat venenatis. Pellentesque vulputate faucibus pulvinar. Aliquam in mauris suscipit odio faucibus volutpat. Proin mi sapien, cursus sollicitudin lacinia non, rutrum at nisl. Aenean et augue augue. In diam tortor, tristique sit amet laoreet sit amet, semper nec sapien. Morbi nec lacus rutrum, hendrerit tortor non, maximus libero. Maecenas placerat orci sit amet metus condimentum scelerisque. Duis non libero felis. Vestibulum auctor nec libero non congue. Nunc sed nunc nibh. Pellentesque id maximus sapien. In hac habitasse platea dictumst. Praesent congue, lectus vel hendrerit vulputate, est augue molestie neque, nec aliquet tellus urna nec odio. Phasellus consectetur, quam quis dignissim finibus, enim eros finibus lacus, sit amet tempor neque magna congue velit.</p>
+
+<p>Pellentesque tortor purus, vestibulum nec neque ut, tincidunt vehicula odio. Nunc nisl tellus, mattis id blandit eu, tincidunt pulvinar ex. Nunc id nunc vitae tortor euismod egestas. Vivamus efficitur iaculis consectetur. Ut a felis mi. Curabitur placerat ornare placerat. Suspendisse urna nulla, feugiat id fringilla in, finibus mattis eros. Vivamus leo ligula, ultrices vel enim ut, dignissim tempor ex. Donec ut nulla id tellus elementum ornare. Duis vel auctor mi, nec suscipit diam. Nullam eu sollicitudin leo, eu tincidunt urna. Duis vitae pharetra est, posuere tincidunt nulla. Phasellus in urna quam.</p>
+
+<p>Aliquam sodales lacus et erat dignissim, non lacinia turpis iaculis. Donec gravida eu elit quis tempus. Praesent tempus leo non eleifend varius. Cras venenatis tellus nec sapien consectetur rutrum. Quisque volutpat lectus at fermentum venenatis. Morbi quis erat laoreet, placerat erat non, porttitor arcu. Etiam quis ante non neque porta bibendum. Sed non augue justo. Fusce volutpat dignissim urna, vel dictum dolor. Sed feugiat scelerisque vestibulum. Integer rutrum tempus sapien, id consectetur ex dapibus sit amet. Nullam lacus risus, mollis non ligula sed, viverra dignissim lacus. Phasellus convallis lobortis metus, vitae bibendum sem ultricies venenatis.</p>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ut varius arcu. Phasellus commodo leo bibendum libero feugiat, sed condimentum justo porttitor. Maecenas finibus in quam sed accumsan. Nunc viverra, justo maximus pellentesque tincidunt, eros erat pretium magna, in aliquam lorem felis a nibh. In placerat elit dolor, a laoreet enim mattis et. Quisque tempor purus eu dignissim maximus. Nullam laoreet sapien risus, eget dapibus eros porttitor a. Mauris iaculis metus nulla, et imperdiet ipsum sollicitudin sit amet. Nam et vehicula dui. Sed ornare scelerisque ligula. Ut sed mattis diam.</p>
+
+<p>sSuspendisse ornare elementum purus, placerat ornare ligula viverra in. Fusce a egestas eros. Vivamus vel metus vehicula, eleifend arcu vel, ultricies mauris. Quisque ac elit ligula. Nulla facilisi. Curabitur cursus tempor orci, et feugiat ipsum placerat ut. Sed ultrices venenatis luctus. Sed cursus ligula eget risus pulvinar, non facilisis libero aliquet. Donec cursus, enim non convallis tincidunt, nisi felis varius eros, quis ultrices magna enim sed velit. Aenean aliquam purus quis lorem lacinia fringilla. Nunc accumsan urna ut risus aliquam blandit non eleifend eros. Donec cursus sodales viverra. In ut risus ultrices, dictum sapien eu, hendrerit ipsum. Praesent placerat tellus mattis turpis scelerisque suscipit vitae a magna.</p>
+
+<p>Pellentesque maximus luctus congue. Aenean imperdiet volutpat venenatis. Pellentesque vulputate faucibus pulvinar. Aliquam in mauris suscipit odio faucibus volutpat. Proin mi sapien, cursus sollicitudin lacinia non, rutrum at nisl. Aenean et augue augue. In diam tortor, tristique sit amet laoreet sit amet, semper nec sapien. Morbi nec lacus rutrum, hendrerit tortor non, maximus libero. Maecenas placerat orci sit amet metus condimentum scelerisque. Duis non libero felis. Vestibulum auctor nec libero non congue. Nunc sed nunc nibh. Pellentesque id maximus sapien. In hac habitasse platea dictumst. Praesent congue, lectus vel hendrerit vulputate, est augue molestie neque, nec aliquet tellus urna nec odio. Phasellus consectetur, quam quis dignissim finibus, enim eros finibus lacus, sit amet tempor neque magna congue velit.</p>
+
+<p>Pellentesque tortor purus, vestibulum nec neque ut, tincidunt vehicula odio. Nunc nisl tellus, mattis id blandit eu, tincidunt pulvinar ex. Nunc id nunc vitae tortor euismod egestas. Vivamus efficitur iaculis consectetur. Ut a felis mi. Curabitur placerat ornare placerat. Suspendisse urna nulla, feugiat id fringilla in, finibus mattis eros. Vivamus leo ligula, ultrices vel enim ut, dignissim tempor ex. Donec ut nulla id tellus elementum ornare. Duis vel auctor mi, nec suscipit diam. Nullam eu sollicitudin leo, eu tincidunt urna. Duis vitae pharetra est, posuere tincidunt nulla. Phasellus in urna quam.</p>
+
+<p>Aliquam sodales lacus et erat dignissim, non lacinia turpis iaculis. Donec gravida eu elit quis tempus. Praesent tempus leo non eleifend varius. Cras venenatis tellus nec sapien consectetur rutrum. Quisque volutpat lectus at fermentum venenatis. Morbi quis erat laoreet, placerat erat non, porttitor arcu. Etiam quis ante non neque porta bibendum. Sed non augue justo. Fusce volutpat dignissim urna, vel dictum dolor. Sed feugiat scelerisque vestibulum. Integer rutrum tempus sapien, id consectetur ex dapibus sit amet. Nullam lacus risus, mollis non ligula sed, viverra dignissim lacus. Phasellus convallis lobortis metus, vitae bibendum sem ultricies venenatis.</p>
+</div>
+    </div>
+    </body>
+</html>
+ 
